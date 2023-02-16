@@ -99,3 +99,20 @@ main h1{
     background-color: rgb(221, 134, 34);
 }
 
+
+/* responsive */
+
+@media (max-width: 48rem){
+    
+    #products ul{
+        grid-template-columns: 100%;
+    }
+    
+    main h1{
+        font-size: 1.5rem;
+    }
+
+    #main-header nav{
+        display: none;
+    }
+}
