@@ -36,12 +36,12 @@ ul{
     margin: 0 1rem;
 }
 
-#main-header nav a{
+#main-header nav a, #side-drawer nav a{
     color: rgb(185, 131, 31);
     font-size: 1.25rem;
 }
 
-#main-header nav a:hover{
+#main-header nav a:hover, #side-drawer nav a:hover{
     color: rgb(228, 163, 44);
 }
 
@@ -50,6 +50,52 @@ ul{
     font-size: 1.5rem;
     color: rgb(238, 165, 80);
     font-weight: 700;
+}
+
+.menu-btn{
+    width: 2.5rem;
+    height: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side-drawer:target{
+    display: block;
+}
+
+#side-drawer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 4rem 1rem;
+    gap: 2rem;
+}
+
+#side-drawer header{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
 }
 
 main h1{
@@ -83,6 +129,10 @@ main h1{
     object-fit: cover;
 }
 
+.food-item h2{
+    margin-bottom: 1rem;
+}
+
 .item-content{
     padding: 1rem;
     text-align: center;
@@ -114,5 +164,9 @@ main h1{
 
     #main-header nav{
         display: none;
+    }
+
+    .menu-btn{
+        display: flex;
     }
 }
